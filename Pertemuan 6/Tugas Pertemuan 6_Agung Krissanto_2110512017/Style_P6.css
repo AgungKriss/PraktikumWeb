@@ -1,0 +1,64 @@
+.line {
+    width: 100%;
+    color: darkgray;
+    background-color: 423F3E;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-end-end-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+p {
+    color: white;
+}
+.warna {
+    color: red;
+}
+.container {
+    width: 400px;
+    background-color: 2B2B2B;
+    padding: 20px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.judul {
+    width: 100%;
+    background-color: 423F3E;
+    padding: auto;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid snow;
+}
+.ubah {
+    margin-left: 37%;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    background-color: white;
+    text-decoration: none;
+}
+.ubah:hover {
+    outline: blue solid 2px;
+}
+.change_color {
+    animation: color-change 3s infinite;
+}
+@keyframes color-change {
+    0% {color: 501709;}
+    10% {color: d54801;}
+    20% {color: f77100;}
+    30% {color: feaa01;}
+    40% {color: fdc144;}
+    50% {color: fdc144;}
+    60% {color: feaa01;}
+    70% {color: f77100;}
+    80% {color: d54801;}
+    90% {color: 501709;}
+    100% {color: 501709;}
+}

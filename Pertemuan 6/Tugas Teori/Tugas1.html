@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <title>Calculate Average</title>
+        <link rel="stylesheet" href="cssTugas1.css"></style>
+        <script type="text/javascript" src="jsTugas1.js"></script>
+    </head>
+    <body>
+        <div class="line">
+            <marquee>Tugas Pemrograman Web - Agung Krissanto - 2110512017</marquee>
+        </div>
+        <div class="container">
+            <h2>Calculate average</h2>
+            <b>Enter the following information and then press the AVERAGE button to calculate your grade.</b>
+            <br/>
+            <br>
+            <div class="text">
+                <p>To clear the data fields, press the CLEAR button.</p>
+                <p>Enter Final Exam Grade: <input type="text" id="final" class="size"></p>
+                <p>Enter Homework Grade: <input type="text" id="homework" class="size"></p>
+                <p>Enter Projects Grade: <input type="text" id="project" class="size"></p>
+            </div>
+            <br/>
+            <button type="submit" onclick="average()">AVERAGE</button>
+            <button type="submit" onclick="clearValue()">CLEAR</button>
+            <br/>
+            <br/>
+            <hr>
+            <b>Your Average is: <input type="text" id="avg" class="size" readonly></b>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Tugas P6</title>
+        <link rel="stylesheet" href="Style_p6.css" type="text/css">
+        <script type="text/javascript" src="Javascript_P6.js"></script>
+    </head>
+    <body bgcolor="171010">
+        <div class="line">
+            <marquee class="change_color">Tugas Praktikum Pemrograman Web Pertemuan 6 - Agung Krissanto - 2110512017</marquee>
+        </div>
+        <div class="container">
+            <div class="judul">
+                <p>Isi Data Mahasiswa</p>
+            </div>
+            <!-- Nim, Nama, dan Tahun merupakan inputan yang wajib diisi (required) -->
+            <form>
+                <p>Nim<span class="warna">*</span> : <input type="text" id="nim"></p>
+                <p>Nama<span class="warna">*</span> : <input type="text" id="nama"></p>
+                <br>
+                <p>
+                    Jenis Kelamin :
+                    <br/>
+                    <input type="radio" name="kelamin" id="l" value="pria"> Pria
+                    <input type="radio" name="kelamin" id="p" value="perempuan"> Perempuan
+                </p>
+                <br>
+                <p>Tahun Masuk<span class="warna">*</span> : <input type="text" id="tahun"></p>
+                
+                <button type="submit" onclick="display()" class="ubah">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
