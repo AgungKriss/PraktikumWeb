@@ -1,0 +1,147 @@
+body {
+    border: 0px;
+    background-color: #070707;
+    margin: 0px;
+}
+
+.line {
+    width: 100%;
+    height: 20px;
+    background-color: #1F273D;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #EAECE6;
+}
+
+.container {
+    width: 250px;
+    padding: 15px;
+    margin-left: 40%;
+    margin-right: auto;
+    background-color: #1F273D;
+    border-radius: 20px;
+}
+.container1 {
+    width: 350px;
+    padding: 15px;
+    margin-left: 40%;
+    margin-right: auto;
+    background-color: #1F273D;
+    border-radius: 20px;
+}
+.containers {
+    width: 1065px;
+    height: auto;
+    padding: 15px;
+    margin-left: 15%;
+    margin-right: auto;
+    background-color: #1F273D;
+    border-radius: 20px;
+}
+
+.judul {
+    text-align: center;
+    color: #EAECE6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    height: 3px;
+    background-color: #EAECE6;
+    border: 0px;
+    margin-bottom: 30px;
+}
+
+.kirim {
+    margin-top: 10px;
+    margin-left: 14%;
+    color: #171010;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 6px;
+    width: 70px;
+    background-color: #F09A37;
+    text-decoration: none;
+}
+.kirim:hover {
+    outline: #D06526;
+    background-color: #D06526;
+}
+
+.kirims {
+    margin-top: 10px;
+    margin-left: 90%;
+    color: #171010;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 6px;
+    width: 70px;
+    background-color: #F09A37;
+    text-decoration: none;
+}
+.kirims:hover {
+    outline: #D06526;
+    background-color: #D06526;
+}
+
+.upload {
+    margin-top: 10px;
+    margin-left: 1%;
+    color: #171010;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 6px;
+    width: 130px;
+    background-color: #F09A37;
+    text-decoration: none;
+}
+.upload:hover {
+    outline: #D06526;
+    background-color: #D06526;
+}
+.next {
+    margin-top: 10px;
+    margin-left: 46%;
+    color: #171010;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 6px;
+    width: 130px;
+    background-color: #F09A37;
+    text-decoration: none;
+}
+.next:hover {
+    outline: #D06526;
+    background-color: #D06526;
+}
+
+.aksi {
+    color: #171010;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 6px;
+    width: 80px;
+    background-color: #F09A37;
+    text-decoration: none;
+}
+.aksi:hover {
+    outline: #D06526;
+    background-color: #D06526;
+}
+
+.box {
+    width: 100%;
+    height: 25px;
+    padding: 2px;
+}
+
+.putih {
+    color: ffffff;
+}
+
+table {
+    margin: 10px;
+}
