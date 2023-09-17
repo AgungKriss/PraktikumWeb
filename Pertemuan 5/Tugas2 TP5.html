@@ -1,0 +1,92 @@
+<!--- 
+Silahkan dilengkapi kodingan ini agar kalkulator ini bisa berfungsi
+nb : tidak menerima plagiarism
+---->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Kalkulator</title> 
+		
+		<!--- css beda dokumen -->
+		<link rel="stylesheet" href="style.css"> 
+	</head> 
+	
+	<body> 
+		<marquee position="left" class="line"><p class="blink">Agung Krissanto - 2110512017 - TUGAS 1 PERTEMUAN 5</p></marquee>
+		<div class="container"> 
+			<!-- Fungsi display() menampilkan teks disini ditampilkan disini-->
+			<!-- atribut onclick akan memanggil fungsi Javascript ketika elemen diklik--> 
+			<div class="item black" id="result">0</div>  
+			<div class="item grey" id="clear" onclick="clr()">C</div>
+			<div class="item grey" id="del" onclick="clr_one()">←</div> 
+			<div class="item orange" id="div" onclick="addOperand('/')">÷</div> 
+			<div class="item grey" id="seven" onclick="addOperand(7)">7</div> 
+			<div class="item grey" id="eight" onclick="addOperand(8)">8</div> 
+			<div class="item grey" id="nine" onclick="addOperand(9)">9</div> 
+			<div class="item orange" id="times" onclick="addOperand('*')">×</div> 
+			<div class="item grey" id="four" onclick="addOperand(4)">4</div> 
+			<div class="item grey" id="five" onclick="addOperand(5)">5</div> 
+			<div class="item grey" id="six" onclick="addOperand(6)">6</div> 
+			<div class="item orange" id="min" onclick="addOperand('-')">–</div> 
+			<div class="item grey" id="one" onclick="addOperand(1)">1</div> 
+			<div class="item grey" id="two" onclick="addOperand(2)">2</div> 
+			<div class="item grey" id="three" onclick="addOperand(3)">3</div> 
+			<div class="item orange" id="plus" onclick="addOperand('+')">+</div> 
+			<div class="item grey" id="zero" onclick="addOperand(0)">0</div> 
+			<div class="item orange" id="equal" onclick="count()">=</div> 
+		</div> 
+	</body> 
+</html> 
+
+<script> 
+//Fungsi untuk menambahkan element
+function addOperand(n) {
+  const resultElement = document.getElementById('result');
+  let result = resultElement.textContent;
+  const operators = ['/', '*', '+', '-'];
+
+  if (operators.includes(n) && result === '0') {
+	result += n;
+  } else if (result !== '0') {
+    result += n;
+  } else {
+    result = n;
+  }
+  display(result);
+}
+
+// Fungsi untuk mendapatkan text di elemen result saat ini, textnya akan di return // Contoh penggunaan: let a = getCurrentResult(); 
+const getCurrentResult = () => { 
+	return document.getElementById('result').textContent; // Variabel berisi 
+} 
+
+//Fungsi untuk menampilkan hasil
+function count(){
+	var resultof = document.getElementById('result').textContent;
+	finalresult = eval(resultof);
+	display(finalresult)
+}
+
+//Fungsi untuk mengganti tulisan di area result 
+const display = (text) => { 
+	const result = document.getElementById('result'); //Elemen ber-Id "result" 
+	result.textContent = text; 
+}; 
+
+//Fungsi untuk menghapus satu-persatu
+function clr_one(){
+	const CurrentResult = getCurrentResult();
+	if(CurrentResult !== "0"){
+		display(CurrentResult.slice(0, -1));
+	}
+}
+
+//Fungsi untuk mereset result
+function clr(){ 
+	display(0); 
+}; 
+</script>

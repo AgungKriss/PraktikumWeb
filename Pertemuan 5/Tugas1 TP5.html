@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Predikat Nilai</title>
+		<script type="text/javascript">
+			function submit() {
+				
+				var nilai = document.getElementById("nilai");
+				var validasiAngka = /^[0-9]+$/;
+				
+				if(nilai.value.match(validasiAngka)){
+					if(nilai.value >= 90 & nilai.value <= 100){
+						document.getElementById("predikat").value = "A";
+					} else if(nilai.value >= 80 & nilai.value <= 89){
+						document.getElementById("predikat").value = "A-";
+					} else if(nilai.value >= 70 & nilai.value <= 79){
+						document.getElementById("predikat").value = "B";
+					} else if(nilai.value >= 60 & nilai.value <= 69){
+						document.getElementById("predikat").value = "B-";
+					} else if(nilai.value >= 50 & nilai.value <= 59){
+						document.getElementById("predikat").value = "C";
+					} else if(nilai.value >= 40 & nilai.value <= 49){
+						document.getElementById("predikat").value = "C-";
+					} else if(nilai.value >= 30 & nilai.value <= 39){
+						document.getElementById("predikat").value = "D";
+					} else if(nilai.value >= 20 & nilai.value <= 29){
+						document.getElementById("predikat").value = "D-";
+					} else if(nilai.value >= 0 & nilai.value <= 19){
+						document.getElementById("predikat").value = "E";
+					} else {
+						alert("Masukkan nilai Anda Salah!\nNilai harus 0-100!");
+						nilai.value="";
+						nilai.focus();
+						return false;
+					}
+				} else {
+					alert("Masukkan nilai Anda Salah!\nFormat wajib angka!");
+						nilai.value="";
+						nilai.focus();
+						return false;
+				}
+			}
+		</script>
+		<style type="text/css">
+			.ubah:hover {
+				outline: blue solid 2px;
+			}
+
+			td {
+				font-weight: bold;
+			}
+			.line {
+				width: 100%;
+				margin-bottom: 25px;
+				background-color: cyan;
+				font-size: 24px;
+				font-weight: bold;
+				border-radius: 25px;
+			}
+
+			.blink {
+				animation: blinker 3s linear infinite;
+			}
+			@keyframes blinker {
+				50% {
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+
+	<body bgcolor="grey">
+		<marquee position="left" class="line"><p class="blink">Agung Krissanto - 2110512017 - TUGAS 1 PERTEMUAN 5</p></marquee>
+		<table cellpadding="7" bgcolor="aqua" align="center">
+			<tr>
+				<td colspan="3" style="text-align: center;">
+					<h2>Predikat Nilai</h2><hr color="black" size="2px">
+				</td>
+			</tr>
+
+			<tr>
+				<td>Nilai Anda</td>
+				<td>:</td>
+				<td>
+					<input type="text" id="nilai" />
+				</td>
+			</tr>
+
+			<tr>
+				<td>Anda Mendapatkan Predikat</td>
+				<td>:</td>
+				<td>
+					<input type="text" id="predikat" />
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3" style="text-align: center;">
+					<button type="button" onclick="submit()" class="ubah">Hasilnya</button>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
