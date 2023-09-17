@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>UTS PPWEB</title>
+    <script type="text/javascript">
+        function bio() {
+            window.open("biodata.html", "_blank", "width=360px", "height=150");
+        }
+
+        function mulai() {
+            window.open("mulai.html", "_blank", "width=360px", "height=150");
+        }
+    </script>
+    <style type="text/css">
+        .line {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        .blue {
+            color: rgb(0, 179, 255);
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: 25%;
+        }
+
+        .container>div {
+            width: 500px;
+        }
+
+        .mulai {
+            background-color: rgb(0, 179, 255);
+            color: white;
+            width: 80px;
+            height: 35px;
+            margin: 5px;
+        }
+
+        .ubah {
+            width: 80px;
+            height: 35px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;">
+    <p class="line">
+        Ini adalah Ujian Tengah Semester Pemrograman Web. Klik ini untuk ke lama Fakultas Ilmu Komputer UPN Veteran
+        Jakarta ->
+    </p>
+    <p class="blue">
+        <img src="https://www.upnvj.ac.id/en/files/large/13b2a28ea95001ec8df2d20d30ae2fc2" alt="logo UPN" height="20"
+            align="center">
+        Sistem Pengajuan Penelitian Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta.
+    </p>
+    <div class="container">
+        <div>
+            <h1>Selamat Datang Pada Sistem Pengajuan Penelitian Skripsi Fakultas Ilmu Komputer UPN Veteran Jakarta</h1>
+            <p>Sistem ini untuk sebagai tolak ukur pemahaman diri saya terhadap materi pemrograman web sistem informasi.
+            </p>
+            <button type="button" onclick="mulai()" class="mulai">Mulai ></button>
+            <button type="button" onclick="bio()" class="ubah">Daftar Diri</button>
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/q_49ZJmaWTo/hqdefault.jpg" alt="upn">
+        </div>
+    </div>
+</body>
+
+</html>
