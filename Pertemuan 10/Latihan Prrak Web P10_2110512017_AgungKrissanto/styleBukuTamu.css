@@ -1,0 +1,68 @@
+body {
+    border: 0px;
+    background-color: #171010;
+    margin: 0px;
+}
+
+.line {
+    width: 100%;
+    height: 20px;
+    background-color: #423F3E;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    width: 370px;
+    background-color: aqua;
+    padding: 15px;
+    margin-left: 35%;
+    margin-right: auto;
+    background-color: #423F3E;
+}
+
+.judul {
+    text-align: center;
+    color: white;
+}
+
+hr {
+    height: 3px;
+    background-color: white;
+    border: 0px;
+    margin-bottom: 30px;
+}
+
+.kirim {
+    margin-top: 10px;
+    margin-left: 37%;
+    color: #171010;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    padding: 6px;
+    width: 70px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.kirim:hover {
+    outline: cyan solid 2px;
+    background-color: aqua;
+}
+
+.box {
+    width: 100%;
+    height: 25px;
+    padding: 2px;
+}
+
+.putih {
+    color: white;
+}
+
+td {
+    padding-bottom: 10px;
+}
