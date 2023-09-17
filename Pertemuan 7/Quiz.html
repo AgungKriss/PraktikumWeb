@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Tugas P6</title>
+        <link rel="stylesheet" href="css.css" type="text/css">
+        <script type="text/javascript" src="java3.js"></script>
+    </head>
+    <body bgcolor="171010">
+        <div class="line">
+            <marquee class="change_color">Quiz Praktikum Pemrograman Web - Agung Krissanto - 2110512017</marquee>
+        </div>
+        <div class="container">
+            <div class="judul">
+                <p>FORM ISI KONTRAK MATA KULIAH UPN <br>VETERAN JAKARTA <img class="logo" src="https://www.upnjatim.ac.id/wp-content/uploads/2018/05/logoupnbaru.png"></p>
+            </div>
+            <!-- Nim, Nama, dan Tahun merupakan inputan yang wajib diisi (required) -->
+            <form action="/action_page.php">
+                <p><input class="box" type="text" id="nim" placeholder="NIM"></p>
+                <p><input class="box" type="text" id="nama" placeholder="Nama"></p>
+                <p><input class="box" type="text" id="tahun" placeholder="Tahun Masuk"></p>
+                <p><input class="box" type="text" id="prodi" placeholder="Program Studi"></p>
+                <br>
+                    <fieldset>
+                        <legend><p>Kontrak Mata Kuliah</p></legend>
+                        <label>Basis Data - 3 SKS<input type="checkbox" name="matkul" id="bd" value="data"></label><br/>
+                        <label>Pemrograman Web - 3 SKS<input type="checkbox" name="matkul" id="pw" value="web"></label><br/>
+                        <label>Data Mining - 3 SKS<input type="checkbox" name="matkul" id="dm" value="mining"></label><br/>
+                    </fieldset>
+                <br>
+                
+                
+                <button type="submit" onclick="display()" class="ubah">Kontrak</button>
+            </form>
+        </div>
+    </body>
+</html>
