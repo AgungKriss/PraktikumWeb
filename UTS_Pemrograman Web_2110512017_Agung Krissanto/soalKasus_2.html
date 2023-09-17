@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Validasi</title>
+        <script>
+            function validasi() {
+                let valnum = /^[0-9]+$/;
+                let nama = document.getElementById("nama").value;
+
+                if (!nama) {
+                alert("Nama harus dimasukkan");
+                } else if (nama.match(valnum)) {
+                alert("Nama harus berupa huruf");
+                return false;
+                } else {
+                alert("Terima kasih, " + nama);
+                return true;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <p>Nama : <input type="text" id="nama" /></p>
+        <button type="button" onclick="validasi()">Kirim</button>
+  </body>
+</html>
