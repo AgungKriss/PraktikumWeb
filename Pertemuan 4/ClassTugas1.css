@@ -1,0 +1,27 @@
+a {
+    color: blue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.ubah:hover {
+    color: yellow;
+    font-weight: bold;
+    background-color: green;
+}
+
+table{
+    border: 2px solid;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+
+td {
+    border: 2px solid;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
